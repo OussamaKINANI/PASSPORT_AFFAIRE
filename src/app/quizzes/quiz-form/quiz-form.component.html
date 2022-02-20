@@ -6,8 +6,15 @@
       <input class="input-custom" type="text" id="name" [formControlName]="'name'">
     </label>
     <br>
+    <label for="theme">
+      Theme <br>
+      <select class="input-custom" [formControlName]="'theme'">
+        <option *ngFor="let thema of THEME_LIST" [value]="thema">{{ thema }}</option>
+      </select>
+    </label>
+    <br>
     <button type="submit" class="button-card" (click)="addQuiz()">Create</button>
   </form>
 </div>
 <!-- Uncomment below to see your form structure and how it changes-->
-<!-- <br><br>{{quizForm.getRawValue() | json}} -->
+<br><br>{{quizForm.getRawValue() | json}}
