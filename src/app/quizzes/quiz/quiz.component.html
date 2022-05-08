@@ -1,7 +1,9 @@
 <div class="card" *ngIf="quiz">
     <h2>
-        <i class="fab fa-leanpub"></i>
+      <i *ngIf="quiz.offre==='calling'" class="fas fa-phone"></i>
+      <i *ngIf="quiz.offre==='meeting'" class="fas fa-camera"></i>
         {{quiz.name}}
     </h2>
+  <h6> État de l'offre : {{quiz.status}} </h6>
     <button class="button-card" (click)="selectQuiz()">Select</button>
 </div>

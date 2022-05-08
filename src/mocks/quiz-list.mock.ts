@@ -17,12 +17,48 @@ import { Question } from '../models/question.model';
 
 export const QUIZ_LIST: Quiz[] = [
     {
-        name: 'Les Acteurs', // What's happening if I change this value..?
-        theme: 'Actor',
-        questions: [],
+        name: 'AGAPEI 31',
+        ptf:"PTF-F05-000GEZ",
+        ic:"Oussama Kinani",
+        status:"Perdu",
+        pri: 21000,
+        offre:'calling',
+      solution:"calling OSM",
+      partenaire:"CISCO",
+      commentaires:"1500 postes en attente de retour, echange client bla",
+      creationDate: new Date(2021,10,22),
+      avv:"Nicolas Rolly",
+      dar:"DAR-0018137",
+      recpdar: new Date(2021,10,22),
+      tagpilotage:"Clos",
+      signature:new Date(2021,10,1),
+
+
     },
     {
-        name: 'Les Sports',
-        questions: [],
-    }
+        name: 'FUNECAP Holding',
+      status:"Perdu",
+      offre:'calling',
+
+    },
+  {
+    name: 'FOS SERVICE LEVAGE',
+    status:"Standby",
+    offre:'calling'
+  },
+  {
+    name: 'Groupe ADEQUAT',
+    status:"Perdu",
+    offre:'calling',
+  },
+  {
+    name: 'VICAT',
+    status:"Gagné",
+    offre:'calling',
+  },
+  {
+    name: 'Université Lyon 3',
+    status:"Standby",
+    offre:'meeting',
+  }
 ];
