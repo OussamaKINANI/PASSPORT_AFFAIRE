@@ -4,8 +4,27 @@
     <label for="title">
       Projet client: <br>
       <input class="input-custom" type="text" id="name" [formControlName]="'name'">
+      <br>
+      <p class="khfif">PTF du projet: </p>
+      <input class="input-custom" type="text" id="ptf" [formControlName]="'ptf'">
     </label>
     <br>
+    <p class="khfif">Type d'offre</p>
+    <select name="offre" id="offre" [formControlName]="'offre'">
+      <option [ngValue]="'calling'">Calling</option>
+      <option [ngValue]="'meeting'">Meeting</option>
+    </select>
+    <br>
+    <p class="khfif">Status de l'offre</p>
+    <select name="status" id="status" [formControlName]="'status'">
+      <option [ngValue]="'Gagné'" >Gagnée</option>
+      <option [ngValue]="'Perdu'">Perdue</option>
+      <option [ngValue]="'Standby'">en Standby</option>
+      <option [ngValue]="'Shooté'">Shooté</option>
+      <option [ngValue]="'No Go'">No Go</option>
+    </select>
+    <br>
+
     <button type="submit" class="button-card" (click)="addQuiz()">Ajouter</button>
   </form>
 </div>

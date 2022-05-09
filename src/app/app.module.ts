@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
-
+import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { QuizListComponent } from './quizzes/quiz-list/quiz-list.component';
 import { QuizComponent } from './quizzes/quiz/quiz.component';
@@ -26,6 +26,7 @@ import { AppRoutingModule } from "./app.routing.module";
     ReactiveFormsModule,
     HttpClientModule,
     RouterModule,
+    FormsModule,
     AppRoutingModule
   ],
   providers: [],

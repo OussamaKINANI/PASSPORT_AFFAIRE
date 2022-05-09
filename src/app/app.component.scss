@@ -1,3 +1,27 @@
 .main-content {
     padding: 0 1em 0 1em;
 }
+
+footer{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  margin-top: 50px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: red;
+  height: auto;
+  padding-top: 40px;
+  color: #fff;
+}
+.sfr{
+  text-align: center;
+}
+.sfr h2{
+  margin: 0px;
+}
+.sfr h4{
+  margin: 0px;
+}
+

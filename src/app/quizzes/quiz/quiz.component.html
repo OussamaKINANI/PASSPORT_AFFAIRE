@@ -5,5 +5,7 @@
         {{quiz.name}}
     </h2>
   <h6> État de l'offre : {{quiz.status}} </h6>
-    <button class="button-card" (click)="selectQuiz()">Select</button>
+  <a routerLink='/edit/{{quiz.ptf}}'>
+    <button class="button-card">Select</button></a>
+
 </div>

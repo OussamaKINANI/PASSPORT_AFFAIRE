@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject } from 'rxjs';
+import {BehaviorSubject, Observable, of} from 'rxjs';
 import { Quiz } from '../models/quiz.model';
 import { QUIZ_LIST } from '../mocks/quiz-list.mock';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
@@ -33,11 +33,16 @@ export class QuizService {
   getQuizzes(){
     this.http.get<Quiz[]>(this.url).subscribe(res =>{
       this.quizzes=res;
-      this.quizzes$.next(this.quizzes); 
+      this.quizzes$.next(this.quizzes);
     });
   }
+  getQuiz(ptf: string): Observable<Quiz> {
+    const quiz = QUIZ_LIST.find(h => String(h.ptf) == ptf)!;
+    return of(quiz);
+  }
 
-  
+
+
 
   addQuiz(quiz: Quiz) {
     // You need here to update the list of quiz and then update our observable (Subject) with the new list
@@ -50,6 +55,6 @@ export class QuizService {
     // More info: https://angular.io/tutorial/toh-pt6#the-searchterms-rxjs-subject
     this.quizzes = this.quizzes.filter(q => q!=quizToDelete);
     this.quizzes$.next(this.quizzes);
-    
+
   }
  }

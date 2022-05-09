@@ -1,10 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Title</title>
-</head>
-<body>
-
-</body>
-</html>
+<div class="card">
+<div *ngIf="quiz">
+  <h2>Details de l'offre : {{quiz.name | uppercase}}</h2>
+  <div><span> Numéro PTF: </span>{{quiz.ptf}}</div>
+  <div>
+    <label for="hero-name">Nom de l'entreprise: </label>
+    <input id="hero-name" [(ngModel)]="quiz.name" placeholder="Vide"/> <br>
+    <label for="hero-name">IC: </label>
+    <input id="hero-name" [(ngModel)]="quiz.ic" placeholder="Videe"/><br>
+    <label for="hero-name">PRI en €: </label>
+    <input id="hero-name" [(ngModel)]="quiz.pri" placeholder="Vide"/><br>
+    <label for="hero-name">Type d'offre: </label>
+    <input id="hero-name" [(ngModel)]="quiz.offre" placeholder="Vide"/><br>
+    <label for="hero-name">Solution: </label>
+    <input id="hero-name" [(ngModel)]="quiz.solution" placeholder="Vide"/><br>
+    <label for="hero-name">Partenaires: </label>
+    <input id="hero-name" [(ngModel)]="quiz.partenaire" placeholder="Vide"/><br>
+    <label for="hero-name">Commentaires: </label>
+    <input id="hero-name" [(ngModel)]="quiz.commentaires" placeholder="Vide"/><br>
+    <label for="hero-name">Date de création: </label>
+    <input id="hero-name" [(ngModel)]="quiz.creationDate" placeholder="Vide"/><br>
+    <label for="hero-name">Avant-vente concerné: </label>
+    <input id="hero-name" [(ngModel)]="quiz.avv" placeholder="Vide"/><br>
+    <label for="hero-name">DAR: </label>
+    <input id="hero-name" [(ngModel)]="quiz.dar" placeholder="Vide"/><br>
+    <label for="hero-name">ESB: </label>
+    <input id="hero-name" [(ngModel)]="quiz.esb" placeholder="Vide"/><br>
+    <label for="hero-name">Date de réception: </label>
+    <input id="hero-name" [(ngModel)]="quiz.recpdar" placeholder="Vide"/><br>
+    <label for="hero-name">Tag: </label>
+    <input id="hero-name" [(ngModel)]="quiz.tag" placeholder="Vide"/><br>
+    <label for="hero-name">Tag Pilotage: </label>
+    <input id="hero-name" [(ngModel)]="quiz.tagpilotage" placeholder="Vide"/><br>
+    <label for="hero-name">Date Signature: </label>
+    <input id="hero-name" [(ngModel)]="quiz.signature" placeholder="Vide"/><br>
+  </div>
+  <button type="button" (click)="goBack()">Revenir à l'acceuil</button>
+</div>
+</div>

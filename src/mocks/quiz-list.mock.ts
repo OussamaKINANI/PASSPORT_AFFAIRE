@@ -37,27 +37,32 @@ export const QUIZ_LIST: Quiz[] = [
     },
     {
         name: 'FUNECAP Holding',
+      ptf:"PTF-F05-000GE1",
       status:"Perdu",
       offre:'calling',
 
     },
   {
     name: 'FOS SERVICE LEVAGE',
+    ptf:"PTF-F05-000GE2",
     status:"Standby",
     offre:'calling'
   },
   {
     name: 'Groupe ADEQUAT',
+    ptf:"PTF-F05-000GE3",
     status:"Perdu",
     offre:'calling',
   },
   {
     name: 'VICAT',
+    ptf:"PTF-F05-000GE4",
     status:"Gagné",
     offre:'calling',
   },
   {
     name: 'Université Lyon 3',
+    ptf:"PTF-F05-000GE5",
     status:"Standby",
     offre:'meeting',
   }
